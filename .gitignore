@@ -1,0 +1,74 @@
+# Godot-specific ignores
+.godot/
+*.translation # Imported translation files
+*.remap # Imported remap files
+*.rtex # Imported texture files (Godot 3.x)
+*.stex # Imported texture files (Godot 4.x)
+*.s3tc.stex # Imported S3TC compressed texture files (Godot 4.x)
+*.etc.stex # Imported ETC compressed texture files (Godot 4.x)
+*.etc2.stex # Imported ETC2 compressed texture files (Godot 4.x)
+*.binary # Imported binary files (Godot 4.x)
+*.scn.remap # Scene remap files (Godot 4.x)
+*.mesh.res # Imported mesh resource files (Godot 4.x)
+*.anim.res # Imported animation resource files (Godot 4.x)
+*.material.res # Imported material resource files (Godot 4.x)
+*.shader.res # Imported shader resource files (Godot 4.x)
+*.texture.res # Imported texture resource files (Godot 4.x)
+*.fontdata.res # Imported font data resource files (Godot 4.x)
+*.sample.res # Imported audio sample resource files (Godot 4.x)
+
+# Export templates
+export_presets.cfg
+*.a # Android export template libraries
+*.aar # Android export template libraries
+*.x86_64 # Linux export template
+*.x86 # Linux export template
+*.arm64 # Linux ARM export template
+*.arm # Linux ARM export template
+*.html # HTML5 export
+*.js # HTML5 export
+*.pck # Pack file for exports
+*.zip # Exported zip files
+*.exe # Windows export
+*.dll # Windows export
+*.dmg # macOS export
+*.app # macOS export bundle
+*.ipa # iOS export
+*.apk # Android export
+*.xap # Windows Phone export (deprecated)
+
+# Build directories and AOT files (Godot 4.x with .NET/C#)
+.mono/
+bin/
+obj/
+**/api/csharp/ # Generated C# API files
+**/api/gdscript/ # Generated GDScript API files
+
+# User-specific editor settings (optional, but generally good to ignore)
+# These files store your personal editor layout, window positions, etc.
+.editor/
+editor_settings-3.tres # Godot 3.x editor settings
+editor_settings-4.tres # Godot 4.x editor settings
+project_metadata.cfg # Project specific metadata often related to editor
+
+# Other common ignores
+.DS_Store # macOS
+Thumbs.db # Windows
+*.swp # Vim swap files
+*~ # Backup files
+*.orig # Original files from merge conflicts
+
+# If you use addons from the AssetLib, you might want to ignore the addons folder
+# if you expect users to download them separately.
+# However, if your project depends on specific versions of addons,
+# you might want to commit them. Choose based on your project's needs.
+# addons/
+
+# User data (persistent game saves, logs, etc. - usually not versioned)
+# user://
+
+# Log files
+*.log
+
+# Crash dumps
+*.crash
